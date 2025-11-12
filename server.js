@@ -21,6 +21,11 @@ console.error = (...args) => {
   originalError(...args);
 };
 
+// Health check endpoint (keeps Vercel from sleeping)
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'OK', timestamp: new Date() });
+});
+
 // Express routes
 app.get('/', (req, res) => {
   const html = `

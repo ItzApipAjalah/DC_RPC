@@ -13,6 +13,6 @@
     }
   ],
   "env": {
-    "TOKEN": "@token"
+    "NODE_ENV": "production"
   }
 }

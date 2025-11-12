@@ -1,0 +1,22 @@
+{
+  "name": "dcp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "debug": "^4.4.3",
+    "discord.js-selfbot-v13": "^3.7.1",
+    "dotenv": "^17.2.3",
+    "node-fetch": "^3.3.2",
+    "prism-media": "^1.3.5",
+    "ws": "^8.18.3",
+    "express": "^4.18.0"
+  }
+}

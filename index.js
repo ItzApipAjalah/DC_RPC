@@ -1,7 +1,6 @@
 const { Client, RichPresence } = require('discord.js-selfbot-v13');
 const dotenv = require('dotenv');
 const { startServer } = require('./server.js');
-const config = require('./config.js');
 
 dotenv.config();
 
@@ -10,9 +9,10 @@ const client = new Client({
 });
 
 const TOKEN = process.env.TOKEN;
+const PORT = process.env.PORT || 3000;
 
 // Start Express server
-startServer(config.BOT.PORT);
+startServer(PORT);
 
 client.on('ready', async () => {
   console.log(`${client.user.username} is now online 24/7!`);
@@ -20,13 +20,13 @@ client.on('ready', async () => {
   console.log(`User ID: ${client.user.id}`);
 
   const rpc = new RichPresence(client)
-    .setApplicationId(config.RPC.applicationId)
-    .setType(config.RPC.type)
-    .setName(config.RPC.name)
-    .setDetails(config.RPC.details)
-    .setState(config.RPC.state)
-    .setStartTimestamp(config.RPC.startTimestamp)
-    .addButton(config.RPC.button.label, config.RPC.button.url);
+    .setApplicationId('1438147354619281449') 
+    .setType('PLAYING')                      
+    .setName('RAWR')                         
+    .setDetails('OI JAWA')                      
+    .setState('🦖')                 
+    .setStartTimestamp(Date.now() - (2555 * 24 * 60 * 60 * 1000)) 
+    .addButton('About Me', 'https://afifmedya.my.id/');
 
   client.user.setActivity(rpc.toJSON());
 });

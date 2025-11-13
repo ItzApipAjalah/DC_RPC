@@ -1,7 +1,8 @@
-> [!CAUTION]
-> **The use of this module under a different name on NPM (or another source besides this Github) is not associated with this library.**
-> **When using these libraries, you accept the risk of exposing your Discord Token.**
+> [!WARNING]
+> **I don't take any responsibility for blocked Discord accounts that used this .**
 
+> [!CAUTION]
+> **Using this on a user account is prohibited by the [Discord TOS](https://discord.com/terms) and can lead to the account block.**
 # DC_RPC
 
 Discord Rich Presence using Node.js
@@ -25,7 +26,7 @@ Discord Rich Presence using Node.js
 
     ![app_id](image/config.jpeg)
     ![config example](image/config2.jpeg)
-    
+
 4. **Get Your Discord Token**
    ⚠️ **Warning:** Your account token is sensitive — never share it with anyone.
 

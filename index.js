@@ -30,6 +30,10 @@ client.on('ready', async () => {
     .setName(config.RPC.name)
     .setDetails(config.RPC.details)
     .setState(config.RPC.state)
+    .setAssetsLargeImage(config.RPC.largeImage)
+    .setAssetsLargeText(config.RPC.largeText)
+    .setAssetsSmallImage(config.RPC.smallImage)
+    .setAssetsSmallText(config.RPC.smallText)
     .setStartTimestamp(config.RPC.startTimestamp)
     .addButton(config.RPC.button.label, config.RPC.button.url);
 
